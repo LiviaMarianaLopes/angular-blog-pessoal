@@ -1,15 +1,18 @@
 <mat-toolbar class="header" color="primary">
-    <span>
-        <mat-icon class="icon">menu_book</mat-icon>
-         Blog Pessoal
-      </span>
-    
+  <a routerLink="/posts" class="logo-link">
+    <img src="assets/Maker.png" alt="Blog Pessoal" class="logo-img" />
+  </a>
+
   <span class="spacer"></span>
 
-  <a routerLink="/home">Home</a>
-  <a routerLink="/posts">Posts</a>
-  <a routerLink="/post-form">Novo Post</a>
-  <a routerLink="/dashboard">Gráficos</a>
-  <a routerLink="/login">Login</a>
+  <a class="nav-link" routerLink="/posts">Posts</a>
+  <a class="nav-link"  routerLink="/post-form">Novo Post</a>
+  <a class="nav-link"  routerLink="/dashboard">Gráficos</a>
+  <ng-container *ngIf="!authService.isLoggedIn(); else logged">
+    <a class="nav-link"  routerLink="/login">Login</a>
+  </ng-container>
 
+  <ng-template #logged>
+    <a class="nav-link" (click)="logout()">Sair</a>
+  </ng-template>
 </mat-toolbar>
