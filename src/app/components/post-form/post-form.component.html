@@ -1,0 +1,42 @@
+<div class="post-form-container">
+  <form [formGroup]="postForm" (ngSubmit)="savePost()">
+    <h2>Postagem</h2>
+  
+      <div class="form-group">
+        <label for="tema">Tema:</label>
+        <input
+          id="tema"
+          type="text"
+          formControlName="tema"
+          placeholder="Digite o nome do tema"
+        />
+      </div>
+  
+      <div class="form-group">
+        <label for="titulo">Título:</label>
+        <input
+          id="titulo"
+          type="text"
+          formControlName="titulo"
+          placeholder="Digite o título da postagem"
+        />
+      </div>
+  
+      <div class="form-group">
+        <label for="texto">Texto:</label>
+        <textarea
+          id="texto"
+          rows="5"
+          formControlName="texto"
+          placeholder="Digite o conteúdo da postagem"
+        ></textarea>
+      </div>
+  
+      <div *ngIf="postError" class="error-message">
+        {{ postError }}
+      </div>
+  
+      <button type="submit" [disabled]="postForm.invalid">Publicar</button>
+    </form>
+  </div>
+  
