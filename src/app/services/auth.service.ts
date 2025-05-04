@@ -7,7 +7,7 @@ import { catchError, map, throwError } from 'rxjs';
   providedIn: 'root',
 })
 export class AuthService {
-  private API_URL = 'http://localhost:8080/api/usuarios';
+  private API_URL = 'https://projeto-blog-pessoal-l27j.onrender.com/api/usuarios';
 
   constructor(private http: HttpClient) {}
 
