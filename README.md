@@ -1,27 +1,57 @@
-# BlogPessoal
+# 📝 Blog Pessoal - Frontend Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
+Aplicação web desenvolvida com **Angular** para gerenciamento de um blog pessoal com dashboard analítico. Este projeto faz parte de um trabalho acadêmico que integra conceitos de **UX Design**, **Desenvolvimento Web**, **Integração com API REST** e **Boas Práticas com Angular Material**
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🎯 Objetivo
 
-## Code scaffolding
+O objetivo da aplicação é permitir o gerenciamento completo de postagens (CRUD), além de oferecer um **dashboard analítico** com gráficos e dados relevantes, como número total de postagens e distribuição por autor.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## ✨ Funcionalidades
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- ✅ CRUD completo de postagens (criar, visualizar, editar e excluir).
+- 🧑‍💻 Cada post contém: título, tema, conteúdo, autor e data.
+- 📊 Dashboard com:
+  - Número total de postagens.
+  - Gráfico de postagens por autor.
+  - Lista das últimas postagens cadastradas.
+- 🔍 Filtro de postagens por autor e/ou data.
+- 📡 Integração com API REST.
+- 🎨 Interface responsiva com Angular Material.
+- 🌐 Boas práticas de UX Design e organização de código.
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🛠️ Tecnologias e Ferramentas
 
-## Running end-to-end tests
+- [Angular 16+](https://angular.io/)
+- [Angular Material](https://material.angular.io/)
+- [Chart.js](https://www.chartjs.org/)
+- [SCSS](https://sass-lang.com/)
+- Integração com Backend (Spring Boot REST API)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+## 🚀 Deploy
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- 🔗 **Frontend (Angular):** [https://blog-pessoal-angular.vercel.app/posts](https://angular-blog-pessoal.vercel.app/posts)  
+- 🔗 **Backend (Spring Boot):** [https://projeto-blog-pessoal-l27j.onrender.com](https://projeto-blog-pessoal-l27j.onrender.com)
+
+---
+
+## 🎓 Desenvolvido no Programa Acelera Maker
+Este projeto foi desenvolvido como parte do programa Acelera Maker da Montreal, com o objetivo de capacitar alunos para o mercado de tecnologia por meio de desafios reais e práticas modernas de desenvolvimento.
+
+---
+
+## 🙌 Contribuições e Aprendizados
+
+Experiência prática com Angular 16 e Angular Material.
+
+Desenvolvimento orientado ao usuário com foco em usabilidade.
+
+Resolução de problemas de integração com backend e gráficos.
+
