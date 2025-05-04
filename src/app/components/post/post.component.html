@@ -1,0 +1,40 @@
+<div class="post-list-container">
+  <div class="header">
+    <h2>Postagens</h2>
+    <div class="actions">
+      <div class="search-container">
+        <mat-icon class="search-icon">search</mat-icon>
+        <input type="text" placeholder="Buscar por autor ou data" (input)="applyFilter($event)">
+      </div>
+      <button mat-raised-button color="primary" routerLink="/post-form">Nova Postagem</button>
+    </div>
+
+  </div>
+
+  <div class="posts-grid">
+    <mat-card *ngFor="let post of (filteredPosts.length ? filteredPosts : posts)" class="post-card">
+      <mat-card-header>
+        <mat-card-title>{{ post.titulo }}</mat-card-title>
+        <mat-card-subtitle>Tema: {{ post.tema.descricao }}</mat-card-subtitle>
+      </mat-card-header>
+
+      <mat-card-content>
+        <p>{{ post.texto }}</p>
+      </mat-card-content>
+
+      <mat-card-footer class="post-footer">
+        <small>Autor: {{ post.usuario.nome }}</small> |
+        <small>Data: {{ post.data }}</small>
+      </mat-card-footer>
+
+      <mat-card-actions align="end">
+        <button mat-raised-button (click)="editPost(post)">
+          Editar
+        </button>
+        <button mat-raised-button (click)="deletePost(post.id)">
+          Excluir
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
