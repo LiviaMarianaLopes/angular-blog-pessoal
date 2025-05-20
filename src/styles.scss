@@ -1,8 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+  /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-.auth-container {
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+  body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+  }
+
+  .auth-container {
     width: 100%;
     max-width: 400px;
     margin: 50px auto;
@@ -13,21 +26,21 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     text-align: center;
     color: rgb(247, 239, 239);
   }
-  
+
   .auth-container h2 {
     margin-bottom: 20px;
   }
-  
+
   .auth-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
-  
+
   .form-group {
     width: 100%;
   }
-  
+
   .form-group input {
     width: 90%;
     padding-bottom: 12px;
@@ -41,12 +54,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     background-color: #eeeeee;
 
   }
-  
+
   .form-group input:focus {
     border-color: #671045;
     outline: none;
   }
-  
+
   button[type="submit"] {
     padding: 12px;
     background-color: #671045;
@@ -57,29 +70,77 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     cursor: pointer;
     transition: background-color 0.3s;
   }
-  
+
   button[type="submit"]:hover {
     background-color: #4e0d35;
   }
-  
+
   .error-message {
     color: #671045;
     font-size: 16px;
     margin-top: 10px;
     font-weight: 500;
   }
-  
+
   .auth-link {
     margin-top: 20px;
     font-size: 16px;
   }
-  
+
   .auth-link a {
     color: #671045;
     text-decoration: none;
   }
-  
+
   .auth-link a:hover {
     text-decoration: underline;
   }
-  
+
+  @media (max-width: 768px) {
+    .auth-container {
+      padding: 20px;
+      margin: 20px auto;
+    }
+
+    .auth-container h2 {
+      font-size: 24px;
+    }
+
+    .form-group input {
+      font-size: 15px;
+    }
+
+    button[type="submit"] {
+      font-size: 15px;
+    }
+
+    .auth-link {
+      font-size: 15px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .auth-container {
+      padding: 15px;
+      margin: 10px auto;
+      border-radius: 8px;
+    }
+
+    .auth-container h2 {
+      font-size: 22px;
+    }
+
+    .form-group input {
+      font-size: 14px;
+      padding: 10px;
+    }
+
+    button[type="submit"] {
+      font-size: 14px;
+      padding: 10px;
+    }
+
+    .auth-link {
+      font-size: 14px;
+    }
+  }
