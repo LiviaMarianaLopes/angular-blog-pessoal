@@ -39,6 +39,7 @@ O objetivo da aplicação é permitir o gerenciamento completo de postagens (CRU
 
 - 🔗 **Frontend (Angular):** [https://blog-pessoal-angular.vercel.app/posts](https://angular-blog-pessoal.vercel.app/posts)  
 - 🔗 **Backend (Spring Boot):** [https://projeto-blog-pessoal-l27j.onrender.com](https://projeto-blog-pessoal-l27j.onrender.com)
+- 🔗 **Repositório Backend:** [https://github.com/LiviaMarianaLopes/projeto-blog-pessoal](https://github.com/LiviaMarianaLopes/projeto-blog-pessoal)
 
 ---
 
